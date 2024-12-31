@@ -19,9 +19,29 @@ namespace LSPU_ADVENTURE
 
         private void button1_Click(object sender, EventArgs e)
         {
-         this.Close();
+            this.Close();
             Main main = new Main();
             main.ShowDialog();
+        }
+
+        private void LecCSS_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void PE_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Recess_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void LabCSS_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
