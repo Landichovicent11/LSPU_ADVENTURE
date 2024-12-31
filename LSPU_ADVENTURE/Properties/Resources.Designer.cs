@@ -114,6 +114,36 @@ namespace LSPU_ADVENTURE.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Loading_screen_blur {
+            get {
+                object obj = ResourceManager.GetObject("Loading screen blur", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Loading_screen_blur1 {
+            get {
+                object obj = ResourceManager.GetObject("Loading screen blur1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap loadingscreengradient {
+            get {
+                object obj = ResourceManager.GetObject("loadingscreengradient", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap photo2pixel_download__1_ {
             get {
                 object obj = ResourceManager.GetObject("photo2pixel_download (1)", resourceCulture);
