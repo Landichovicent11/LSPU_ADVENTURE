@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoadingScreen));
             progressBar1 = new ProgressBar();
             Logo = new PictureBox();
             timer1 = new System.Windows.Forms.Timer(components);
@@ -52,7 +51,7 @@
             // Logo
             // 
             Logo.BackColor = Color.Transparent;
-            Logo.BackgroundImage = (Image)resources.GetObject("Logo.BackgroundImage");
+            Logo.BackgroundImage = Properties.Resources.photo2pixel_download__1_;
             Logo.BackgroundImageLayout = ImageLayout.Stretch;
             Logo.Location = new Point(43, 12);
             Logo.Name = "Logo";
@@ -104,7 +103,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackgroundImage = Properties.Resources.Cool_Blue_Gradient_Lights_Background;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(500, 500);
             Controls.Add(label1);

@@ -117,4 +117,23 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="466871878_423296197417442_7650429848136589711_n" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\466871878_423296197417442_7650429848136589711_n.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Cool-Blue-Gradient-Lights-Background" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\Cool-Blue-Gradient-Lights-Background.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Light-Blue-Simple-Gradient-Background-Graphics-3307511-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\Light-Blue-Simple-Gradient-Background-Graphics-3307511-1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Light-Blue-Wallpaper-Designs" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\Light-Blue-Wallpaper-Designs.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="light-soft-color-blue-low-poly-crystal-background-polygon-design-pattern-low-poly-illustration-low-polygon-background-free-vector" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\light-soft-color-blue-low-poly-crystal-background-polygon-design-pattern-low-poly-illustration-low-polygon-background-free-vector.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="photo2pixel_download (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\photo2pixel_download (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

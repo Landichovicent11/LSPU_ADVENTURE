@@ -59,5 +59,66 @@ namespace LSPU_ADVENTURE.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _466871878_423296197417442_7650429848136589711_n {
+            get {
+                object obj = ResourceManager.GetObject("466871878_423296197417442_7650429848136589711_n", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Cool_Blue_Gradient_Lights_Background {
+            get {
+                object obj = ResourceManager.GetObject("Cool-Blue-Gradient-Lights-Background", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Light_Blue_Simple_Gradient_Background_Graphics_3307511_1 {
+            get {
+                object obj = ResourceManager.GetObject("Light-Blue-Simple-Gradient-Background-Graphics-3307511-1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Light_Blue_Wallpaper_Designs {
+            get {
+                object obj = ResourceManager.GetObject("Light-Blue-Wallpaper-Designs", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap light_soft_color_blue_low_poly_crystal_background_polygon_design_pattern_low_poly_illustration_low_polygon_background_free_vector {
+            get {
+                object obj = ResourceManager.GetObject("light-soft-color-blue-low-poly-crystal-background-polygon-design-pattern-low-poly" +
+                        "-illustration-low-polygon-background-free-vector", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap photo2pixel_download__1_ {
+            get {
+                object obj = ResourceManager.GetObject("photo2pixel_download (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

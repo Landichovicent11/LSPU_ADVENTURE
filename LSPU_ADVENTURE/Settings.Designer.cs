@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Settings));
             button1 = new Button();
             button2 = new Button();
             button3 = new Button();
@@ -65,7 +64,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackgroundImage = Properties.Resources.Light_Blue_Wallpaper_Designs;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1182, 653);
             Controls.Add(button3);

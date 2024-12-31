@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Map));
             button1 = new Button();
             SuspendLayout();
             // 
@@ -50,7 +49,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackgroundImage = Properties.Resources._466871878_423296197417442_7650429848136589711_n;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1200, 700);
             Controls.Add(button1);
