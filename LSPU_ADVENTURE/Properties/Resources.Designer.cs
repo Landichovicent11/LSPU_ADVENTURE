@@ -73,9 +73,29 @@ namespace LSPU_ADVENTURE.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Artapp_TempDesign {
+            get {
+                object obj = ResourceManager.GetObject("Artapp_TempDesign", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Cool_Blue_Gradient_Lights_Background {
             get {
                 object obj = ResourceManager.GetObject("Cool-Blue-Gradient-Lights-Background", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Equal {
+            get {
+                object obj = ResourceManager.GetObject("Equal", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -147,6 +167,16 @@ namespace LSPU_ADVENTURE.Properties {
         internal static System.Drawing.Bitmap photo2pixel_download__1_ {
             get {
                 object obj = ResourceManager.GetObject("photo2pixel_download (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap PlusSign {
+            get {
+                object obj = ResourceManager.GetObject("PlusSign", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

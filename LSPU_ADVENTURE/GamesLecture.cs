@@ -30,7 +30,9 @@ namespace LSPU_ADVENTURE
             {
                 if (Games[i] == "ArtApp")
                 {
-                    //put your Form here
+                    this.Hide();
+                    Artapp artapp = new Artapp();
+                    this.Close();
                 }
                 if (Games[i] == "Discrete")
                 {
@@ -55,7 +57,10 @@ namespace LSPU_ADVENTURE
 
         private void artapp(object sender, EventArgs e)
         {
-            //put you code here
+            this.Hide();
+            Artapp artapp = new Artapp();
+            artapp.ShowDialog();
+            this.Close();
         }
     }
 }

@@ -47,10 +47,10 @@ namespace LSPU_ADVENTURE
                 // Stop Timer
                 timerGenerator.Stop();
 
-                this.Close();
+                this.Hide();
                 GamesLecture lecture = new GamesLecture();
                 lecture.ShowDialog();
-                this.Hide();
+                this.Close();
             }
         }
     }
