@@ -50,5 +50,13 @@ namespace LSPU_ADVENTURE
         {
 
         }
+
+        private void Librarybutton2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Library game = new Library();
+            game.ShowDialog();
+            this.Close();
+        }
     }
 }

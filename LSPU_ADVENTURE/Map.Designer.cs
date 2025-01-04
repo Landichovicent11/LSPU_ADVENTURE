@@ -33,6 +33,7 @@
             PE = new Button();
             Recess = new Button();
             LabCSS = new Button();
+            Librarybutton2 = new Button();
             SuspendLayout();
             // 
             // button1
@@ -41,9 +42,10 @@
             button1.BackgroundImageLayout = ImageLayout.Stretch;
             button1.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             button1.ForeColor = SystemColors.ButtonHighlight;
-            button1.Location = new Point(12, 12);
+            button1.Location = new Point(10, 9);
+            button1.Margin = new Padding(3, 2, 3, 2);
             button1.Name = "button1";
-            button1.Size = new Size(127, 42);
+            button1.Size = new Size(111, 32);
             button1.TabIndex = 0;
             button1.Text = "Back";
             button1.UseVisualStyleBackColor = false;
@@ -51,9 +53,10 @@
             // 
             // LecCSS
             // 
-            LecCSS.Location = new Point(447, 468);
+            LecCSS.Location = new Point(391, 351);
+            LecCSS.Margin = new Padding(3, 2, 3, 2);
             LecCSS.Name = "LecCSS";
-            LecCSS.Size = new Size(150, 29);
+            LecCSS.Size = new Size(131, 22);
             LecCSS.TabIndex = 1;
             LecCSS.Text = "LectureBuildingCSS";
             LecCSS.UseVisualStyleBackColor = true;
@@ -61,9 +64,10 @@
             // 
             // PE
             // 
-            PE.Location = new Point(620, 468);
+            PE.Location = new Point(542, 351);
+            PE.Margin = new Padding(3, 2, 3, 2);
             PE.Name = "PE";
-            PE.Size = new Size(94, 29);
+            PE.Size = new Size(82, 22);
             PE.TabIndex = 2;
             PE.Text = "GYM";
             PE.UseVisualStyleBackColor = true;
@@ -71,9 +75,10 @@
             // 
             // Recess
             // 
-            Recess.Location = new Point(736, 468);
+            Recess.Location = new Point(644, 351);
+            Recess.Margin = new Padding(3, 2, 3, 2);
             Recess.Name = "Recess";
-            Recess.Size = new Size(94, 29);
+            Recess.Size = new Size(82, 22);
             Recess.TabIndex = 3;
             Recess.Text = "Cafeteria";
             Recess.UseVisualStyleBackColor = true;
@@ -81,27 +86,40 @@
             // 
             // LabCSS
             // 
-            LabCSS.Location = new Point(848, 468);
+            LabCSS.Location = new Point(742, 351);
+            LabCSS.Margin = new Padding(3, 2, 3, 2);
             LabCSS.Name = "LabCSS";
-            LabCSS.Size = new Size(94, 29);
+            LabCSS.Size = new Size(82, 22);
             LabCSS.TabIndex = 4;
             LabCSS.Text = "LabCSS";
             LabCSS.UseVisualStyleBackColor = true;
             LabCSS.Click += LabCSS_Click;
             // 
+            // Librarybutton2
+            // 
+            Librarybutton2.Location = new Point(830, 350);
+            Librarybutton2.Name = "Librarybutton2";
+            Librarybutton2.Size = new Size(75, 23);
+            Librarybutton2.TabIndex = 5;
+            Librarybutton2.Text = "Library";
+            Librarybutton2.UseVisualStyleBackColor = true;
+            Librarybutton2.Click += Librarybutton2_Click;
+            // 
             // Map
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources._466871878_423296197417442_7650429848136589711_n;
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(1200, 700);
+            ClientSize = new Size(1050, 525);
+            Controls.Add(Librarybutton2);
             Controls.Add(LabCSS);
             Controls.Add(Recess);
             Controls.Add(PE);
             Controls.Add(LecCSS);
             Controls.Add(button1);
             FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(3, 2, 3, 2);
             Name = "Map";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Map";
@@ -115,5 +133,6 @@
         private Button PE;
         private Button Recess;
         private Button LabCSS;
+        private Button Librarybutton2;
     }
 }
