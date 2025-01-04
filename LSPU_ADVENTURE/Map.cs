@@ -40,7 +40,10 @@ namespace LSPU_ADVENTURE
 
         private void Recess_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            TypingGameRecess game = new TypingGameRecess();
+            game.ShowDialog();
+            this.Close();
         }
 
         private void LabCSS_Click(object sender, EventArgs e)
