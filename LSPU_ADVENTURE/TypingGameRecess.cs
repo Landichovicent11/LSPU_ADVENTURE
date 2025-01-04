@@ -37,7 +37,7 @@ namespace LSPU_ADVENTURE
             gameDurationTimer.Interval = 1000;
             gameDurationTimer.Tick += GameDurationTimer_Tick;
 
-            string imageDirectory = @"C:\Users\Administrator\source\repos\LSPU_ADVENTURE\LSPU_ADVENTURE\Food";
+            string imageDirectory = @"C:\Users\akola\source\repos\LSPU_ADVENTURE\LSPU_ADVENTURE\Food";
             if (Directory.Exists(imageDirectory))
             {
                 imagePaths = Directory.GetFiles(imageDirectory, "*.jpg").ToList();
