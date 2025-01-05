@@ -203,6 +203,10 @@ namespace LSPU_ADVENTURE
         {
 
         }
+        private void PB_1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 
     public class Question

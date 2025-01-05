@@ -43,6 +43,7 @@
             // pictureBox
             // 
             pictureBox.BorderStyle = BorderStyle.Fixed3D;
+            pictureBox.Image = Properties.Resources.chicken;
             pictureBox.Location = new Point(432, 12);
             pictureBox.Name = "pictureBox";
             pictureBox.Size = new Size(445, 278);
@@ -178,5 +179,6 @@
 
         private PictureBox SettingspictureBox1;
         private LinkLabel exitlinkLabel1;
+        private System.Windows.Forms.Timer gameTimer;
     }
 }

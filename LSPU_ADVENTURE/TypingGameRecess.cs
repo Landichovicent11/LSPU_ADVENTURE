@@ -16,7 +16,6 @@ namespace LSPU_ADVENTURE
         private int timeLeft = 30;
         private int totalGameTime = 30 * 60;
         private int score = 0;
-        private System.Windows.Forms.Timer gameTimer;
         private System.Windows.Forms.Timer gameDurationTimer;
         private Random random = new Random();
         private bool isPaused = false;
@@ -37,11 +36,7 @@ namespace LSPU_ADVENTURE
             gameDurationTimer.Interval = 1000;
             gameDurationTimer.Tick += GameDurationTimer_Tick;
 
-            string imageDirectory = @"C:\Users\akola\source\repos\LSPU_ADVENTURE\LSPU_ADVENTURE\Food";
-            if (Directory.Exists(imageDirectory))
-            {
-                imagePaths = Directory.GetFiles(imageDirectory, "*.jpg").ToList();
-            }
+           
 
             lblTimeLeft.Text = $"Time Left: {timeLeft} seconds";
             lblScore.Text = $"Score: {score}";
@@ -54,49 +49,42 @@ namespace LSPU_ADVENTURE
 
         private void LoadRandomImage()
         {
-            if (imagePaths.Count == 0)
+            // Map resources to their respective food lists
+            var imageResourceMap = new Dictionary<Bitmap, List<string>>
+    {
+        { Properties.Resources.berries, new List<string> { "bacon", "bread", "egg", "cheese", "berries" } },
+        { Properties.Resources.burger, new List<string> { "burger", "fries", "hotdog" } },
+        { Properties.Resources.chicken, new List<string> { "egg", "bread", "chicken" } },
+        { Properties.Resources.Kwek_Kwek_Recipe, new List<string> { "kwek kwek" } },
+        { Properties.Resources.tacobell, new List<string> { "taco" } },
+        { Properties.Resources.tomato, new List<string> { "bacon", "egg", "bread", "tomato" } }
+    };
+
+            // Select a random image that hasn't been used yet
+            Bitmap selectedImage = null;
+            List<string> selectedFoods = null;
+
+            var unusedImages = imageResourceMap.Keys.Except(usedIndices.Select(i => imageResourceMap.Keys.ElementAt(i))).ToList();
+            if (unusedImages.Count > 0)
             {
-                MessageBox.Show("No images found in the specified directory.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
+                int randomIndex = random.Next(unusedImages.Count);
+                selectedImage = unusedImages[randomIndex];
+                selectedFoods = imageResourceMap[selectedImage];
+                usedIndices.Add(imageResourceMap.Keys.ToList().IndexOf(selectedImage));
             }
 
-            int index;
-            do
+            if (selectedImage != null && selectedFoods != null)
             {
-                index = random.Next(imagePaths.Count);
-            } while (usedIndices.Contains(index));
-
-            usedIndices.Add(index);
-
-            pictureBox.Image = Image.FromFile(imagePaths[index]);
-            pictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
-
-            // Update the food list for the new image
-            foodList = index switch
-            {
-                0 => new List<string> { "bacon", "bread", "egg", "cheese", "berries" },
-                1 => new List<string> { "burger", "fries", "hotdog" },
-                2 => new List<string> { "egg", "bread", "chicken" },
-                3 => new List<string> { "kwek kwek" },
-                4 => new List<string> { "taco" },
-                5 => new List<string> { "bacon", "egg", "bread", "tomato" },
-                _ => new List<string>()
-            };
-        }
-
-        private void GameTimer_Tick(object sender, EventArgs e)
-        {
-            if (timeLeft > 0)
-            {
-                timeLeft--;
-                lblTimeLeft.Text = $"Time Left: {timeLeft} seconds";
+                pictureBox.Image = selectedImage;
+                pictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
+                foodList = selectedFoods;
             }
             else
             {
-                EndRound("Time's up! Game over.");
+                MessageBox.Show("All images have been used!", "Game Over", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                ResetGameControls();
             }
         }
-
         private void GameDurationTimer_Tick(object sender, EventArgs e)
         {
             if (totalGameTime > 0)
@@ -161,30 +149,55 @@ namespace LSPU_ADVENTURE
 
         private void btnSubmit_Click(object sender, EventArgs e)
         {
-            string userGuess = txtGuess.Text.Trim().ToLower();
-            List<string> normalizedFoodList = foodList.Select(food => food.Trim().ToLower()).ToList();
+            string userGuess = txtGuess.Text.Trim().ToLower(); // Normalize input
+            List<string> normalizedFoodList = foodList.Select(food => food.Trim().ToLower()).ToList(); // Normalize answers
 
-            if (normalizedFoodList.Contains(userGuess) && !guessedFoods.Contains(userGuess))
+            // Debugging output for verification
+            Console.WriteLine($"User Guess: {userGuess}");
+            Console.WriteLine($"Food List: {string.Join(", ", normalizedFoodList)}");
+
+            if (string.IsNullOrWhiteSpace(userGuess))
             {
-                guessedFoods.Add(userGuess);
-                lstGuessedFoods.Items.Add(userGuess);
+                MessageBox.Show("Please enter a guess.", "Invalid Input", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 txtGuess.Clear();
-                score += 10;
-                lblScore.Text = $"Score: {score}";
+                return;
+            }
 
-                if (guessedFoods.Count == foodList.Count)
+            if (normalizedFoodList.Contains(userGuess))
+            {
+                if (!guessedFoods.Contains(userGuess))
                 {
-                    LoadRandomImage();
-                    guessedFoods.Clear();
-                    lstGuessedFoods.Items.Clear();
+                    guessedFoods.Add(userGuess);
+                    lstGuessedFoods.Items.Add(userGuess);
+                    txtGuess.Clear();
+                    score += 10;
+                    lblScore.Text = $"Score: {score}";
+
+                    // Check if all foods have been guessed
+                    if (guessedFoods.Count == foodList.Count)
+                    {
+                        gameTimer.Stop();
+                        
+                        MessageBox.Show("All foods guessed! Loading the next image.", "Round Complete", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        LoadRandomImage(); // Load a new image
+
+                        gameTimer.Start();
+                        
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("You already guessed this food!", "Duplicate Guess", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    txtGuess.Clear();
                 }
             }
             else
             {
-                MessageBox.Show("Incorrect guess or already guessed.", "Try Again", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show($"'{txtGuess.Text}' is incorrect. Try again!", "Incorrect Guess", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 txtGuess.Clear();
             }
         }
+
 
         private void TypingGameRecess_Load(object sender, EventArgs e)
         {
@@ -221,6 +234,19 @@ namespace LSPU_ADVENTURE
                 gameDurationTimer.Stop();
                 exitlinkLabel1.Visible = true;
 
+            }
+        }
+
+        private void GameTimer_Tick(object sender, EventArgs e)
+        {
+            if (timeLeft > 0)
+            {
+                timeLeft--;
+                lblTimeLeft.Text = $"Time left: {timeLeft} seconds";
+            }
+            else
+            {
+                EndRound("Time's up Game over...");
             }
         }
 

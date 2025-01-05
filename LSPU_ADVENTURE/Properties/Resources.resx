@@ -124,6 +124,12 @@
   <data name="photo2pixel_download (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Image\photo2pixel_download (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="image" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\image.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Light-Blue-Simple-Gradient-Background-Graphics-3307511-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\Light-Blue-Simple-Gradient-Background-Graphics-3307511-1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Equal" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Image\Equal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -138,9 +144,6 @@
   </data>
   <data name="Cool-Blue-Gradient-Lights-Background" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Image\Cool-Blue-Gradient-Lights-Background.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Light-Blue-Simple-Gradient-Background-Graphics-3307511-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Image\Light-Blue-Simple-Gradient-Background-Graphics-3307511-1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="PlusSign" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Image\PlusSign.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -157,7 +160,22 @@
   <data name="Artapp_TempDesign" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Image\Artapp_TempDesign.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="image" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Image\image.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Kwek-Kwek-Recipe" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\Kwek-Kwek-Recipe.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tacobell" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\tacobell.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tomato" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\tomato.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="berries" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\berries.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="burger" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\burger.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="chicken" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Image\chicken.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
