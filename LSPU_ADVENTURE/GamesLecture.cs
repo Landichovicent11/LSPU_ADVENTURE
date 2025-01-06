@@ -36,35 +36,23 @@ namespace LSPU_ADVENTURE
                 }
                 if (Games[i] == "Discrete")
                 {
-                    this.Hide();
-                    Discrete discrete = new Discrete();
-                    discrete.ShowDialog();
-                    this.Close();
+                    //put your form here
                 }
                 if (Games[i] == "IM")
                 {
-                    this.Hide();
-                    SituationalQuestion game = new SituationalQuestion();
-                    game.ShowDialog();
-                    this.Close();
+                    //put your form here
                 }
             }
         }
 
         private void InfoManagement(object sender, EventArgs e)
         {
-            this.Hide();
-            SituationalQuestion game = new SituationalQuestion();
-            game.ShowDialog();
-            this.Close();
+            //put rou fomr here
         }
 
         private void discrete(object sender, EventArgs e)
         {
-            this.Hide();
-            Discrete discrete = new Discrete();
-            discrete.ShowDialog();
-            this.Close();
+            //put your code here
         }
 
         private void artapp(object sender, EventArgs e)

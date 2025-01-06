@@ -34,6 +34,7 @@
             Recess = new Button();
             LabCSS = new Button();
             Librarybutton2 = new Button();
+            btn_IM = new Button();
             SuspendLayout();
             // 
             // button1
@@ -105,6 +106,17 @@
             Librarybutton2.UseVisualStyleBackColor = true;
             Librarybutton2.Click += Librarybutton2_Click;
             // 
+            // btn_IM
+            // 
+            btn_IM.Location = new Point(412, 386);
+            btn_IM.Margin = new Padding(3, 2, 3, 2);
+            btn_IM.Name = "btn_IM";
+            btn_IM.Size = new Size(82, 22);
+            btn_IM.TabIndex = 6;
+            btn_IM.Text = "IM";
+            btn_IM.UseVisualStyleBackColor = true;
+            btn_IM.Click += btn_IM_Click;
+            // 
             // Map
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -112,6 +124,7 @@
             BackgroundImage = Properties.Resources._466871878_423296197417442_7650429848136589711_n;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1050, 525);
+            Controls.Add(btn_IM);
             Controls.Add(Librarybutton2);
             Controls.Add(LabCSS);
             Controls.Add(Recess);
@@ -134,5 +147,6 @@
         private Button Recess;
         private Button LabCSS;
         private Button Librarybutton2;
+        private Button btn_IM;
     }
 }

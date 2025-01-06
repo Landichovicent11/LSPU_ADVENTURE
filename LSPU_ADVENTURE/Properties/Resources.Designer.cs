@@ -113,9 +113,9 @@ namespace LSPU_ADVENTURE.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap ArtFinalBg {
+        internal static System.Drawing.Bitmap Artapp_TempDesign {
             get {
-                object obj = ResourceManager.GetObject("ArtFinalBg", resourceCulture);
+                object obj = ResourceManager.GetObject("Artapp_TempDesign", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -173,16 +173,6 @@ namespace LSPU_ADVENTURE.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap CSSUPDATED {
-            get {
-                object obj = ResourceManager.GetObject("CSSUPDATED", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap Equal {
             get {
                 object obj = ResourceManager.GetObject("Equal", resourceCulture);
@@ -206,16 +196,6 @@ namespace LSPU_ADVENTURE.Properties {
         internal static System.Drawing.Bitmap image {
             get {
                 object obj = ResourceManager.GetObject("image", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap ImAnimatedBG {
-            get {
-                object obj = ResourceManager.GetObject("ImAnimatedBG", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -317,16 +297,6 @@ namespace LSPU_ADVENTURE.Properties {
         internal static System.Drawing.Bitmap photo2pixel_download__1_1 {
             get {
                 object obj = ResourceManager.GetObject("photo2pixel_download (1)1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap PlaintextList {
-            get {
-                object obj = ResourceManager.GetObject("PlaintextList", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
