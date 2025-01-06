@@ -62,5 +62,21 @@ namespace LSPU_ADVENTURE
             artapp.ShowDialog();
             this.Close();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Map main = new Map();
+            main.ShowDialog();
+            this.Close();
+        }
+
+        private void OOPbutton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            OOP main = new OOP();
+            main.ShowDialog();
+            this.Close();
+        }
     }
 }

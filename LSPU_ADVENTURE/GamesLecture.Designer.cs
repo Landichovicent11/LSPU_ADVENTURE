@@ -32,6 +32,8 @@
             Discrete = new Button();
             IM = new Button();
             Random = new Button();
+            OOPbutton = new Button();
+            button1 = new Button();
             SuspendLayout();
             // 
             // ArtApp
@@ -74,11 +76,33 @@
             Random.UseVisualStyleBackColor = true;
             Random.Click += RandomGame;
             // 
+            // OOPbutton
+            // 
+            OOPbutton.Location = new Point(318, 247);
+            OOPbutton.Name = "OOPbutton";
+            OOPbutton.Size = new Size(94, 29);
+            OOPbutton.TabIndex = 4;
+            OOPbutton.Text = "OOP";
+            OOPbutton.UseVisualStyleBackColor = true;
+            OOPbutton.Click += OOPbutton_Click;
+            // 
+            // button1
+            // 
+            button1.Location = new Point(12, 12);
+            button1.Name = "button1";
+            button1.Size = new Size(94, 29);
+            button1.TabIndex = 5;
+            button1.Text = "Back";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
             // GamesLecture
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(button1);
+            Controls.Add(OOPbutton);
             Controls.Add(Random);
             Controls.Add(IM);
             Controls.Add(Discrete);
@@ -96,5 +120,7 @@
         private Button IM;
         private Button Random;
         private Button Discrete;
+        private Button OOPbutton;
+        private Button button1;
     }
 }

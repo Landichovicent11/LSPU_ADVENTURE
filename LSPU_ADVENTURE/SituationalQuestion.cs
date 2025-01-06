@@ -182,7 +182,10 @@ namespace LSPU_ADVENTURE
 
         private void backButton_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            Map main = new Map();
+            main.ShowDialog();
+            this.Close();
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)

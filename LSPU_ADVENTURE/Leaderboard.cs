@@ -126,7 +126,7 @@ namespace LSPU_ADVENTURE
         private void button1_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Map game = new Map();
+            Settings game = new Settings();
             game.ShowDialog();
             this.Close();
         }
