@@ -16,5 +16,44 @@ namespace LSPU_ADVENTURE
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void aboutbutton2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            AboutUs abt = new AboutUs();
+            abt.ShowDialog();
+            this.Close();
+        }
+
+        private void leaderboardbutton3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Settings_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Main abt = new Main();
+            abt.ShowDialog();
+            this.Close();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Tutorials tut = new Tutorials();
+            tut.ShowDialog();
+            this.Close();
+        }
     }
 }

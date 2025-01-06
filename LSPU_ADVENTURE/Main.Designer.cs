@@ -101,7 +101,7 @@
             Settings.Name = "Settings";
             Settings.Size = new Size(184, 38);
             Settings.TabIndex = 4;
-            Settings.Text = "Settings";
+            Settings.Text = "Preference";
             Settings.UseVisualStyleBackColor = false;
             Settings.Click += Settings_Click;
             // 

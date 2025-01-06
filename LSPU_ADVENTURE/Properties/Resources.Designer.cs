@@ -63,6 +63,46 @@ namespace LSPU_ADVENTURE.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _123603d7_68fe_4ac7_a30f_efa58cbd6bcf {
+            get {
+                object obj = ResourceManager.GetObject("123603d7-68fe-4ac7-a30f-efa58cbd6bcf", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _2025_01_05__1_ {
+            get {
+                object obj = ResourceManager.GetObject("2025-01-05 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _2025_01_05__2_ {
+            get {
+                object obj = ResourceManager.GetObject("2025-01-05 (2)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _2de45358_3885_4110_8c3c_552a41145697 {
+            get {
+                object obj = ResourceManager.GetObject("2de45358-3885-4110-8c3c-552a41145697", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _466871878_423296197417442_7650429848136589711_n {
             get {
                 object obj = ResourceManager.GetObject("466871878_423296197417442_7650429848136589711_n", resourceCulture);
@@ -126,6 +166,16 @@ namespace LSPU_ADVENTURE.Properties {
         internal static System.Drawing.Bitmap Equal {
             get {
                 object obj = ResourceManager.GetObject("Equal", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap gab_moneves {
+            get {
+                object obj = ResourceManager.GetObject("gab moneves", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -244,6 +294,16 @@ namespace LSPU_ADVENTURE.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ricci {
+            get {
+                object obj = ResourceManager.GetObject("ricci", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap tacobell {
             get {
                 object obj = ResourceManager.GetObject("tacobell", resourceCulture);
@@ -257,6 +317,26 @@ namespace LSPU_ADVENTURE.Properties {
         internal static System.Drawing.Bitmap tomato {
             get {
                 object obj = ResourceManager.GetObject("tomato", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap vincent {
+            get {
+                object obj = ResourceManager.GetObject("vincent", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap yuan {
+            get {
+                object obj = ResourceManager.GetObject("yuan", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -27,7 +27,10 @@ namespace LSPU_ADVENTURE
 
         private void Settings_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            Settings st = new Settings();
+            st.ShowDialog();
+            this.Close();
         }
 
         private void Exit_Click(object sender, EventArgs e)
