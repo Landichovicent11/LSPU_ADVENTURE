@@ -47,10 +47,5 @@ namespace LSPU_ADVENTURE
         {
 
         }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

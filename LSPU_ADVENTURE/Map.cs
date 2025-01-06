@@ -58,13 +58,5 @@ namespace LSPU_ADVENTURE
             game.ShowDialog();
             this.Close();
         }
-
-        private void btn_IM_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            SituationalQuestion game = new SituationalQuestion();
-            game.ShowDialog();
-            this.Close();
-        }
     }
 }

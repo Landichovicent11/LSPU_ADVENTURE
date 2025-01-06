@@ -155,7 +155,7 @@ namespace LSPU_ADVENTURE
                 }
                 else
                 {
-                    Application.Exit();
+                   
                 }
             }
             else
@@ -182,7 +182,10 @@ namespace LSPU_ADVENTURE
 
         private void backButton_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            GamesLecture Lecture = new GamesLecture();
+            Lecture.ShowDialog();
+            this.Close();
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
