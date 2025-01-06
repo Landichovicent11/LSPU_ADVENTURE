@@ -34,8 +34,8 @@
             lstMythology = new ListBox();
             btnCheckOrder = new Button();
             lblResult = new Label();
-            returnlinkLabel1 = new LinkLabel();
             pictureBox1 = new PictureBox();
+            button1 = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -113,7 +113,7 @@
             lblEducational.Size = new Size(93, 17);
             lblEducational.TabIndex = 5;
             lblEducational.Text = "Educational";
-            lblEducational.Click += this.lblEducational_Click;
+            lblEducational.Click += lblEducational_Click;
             // 
             // lstEducational
             // 
@@ -178,38 +178,38 @@
             lblResult.Name = "lblResult";
             lblResult.Size = new Size(0, 17);
             lblResult.TabIndex = 10;
-            
-            // 
-            // returnlinkLabel1
-            // 
-            returnlinkLabel1.ActiveLinkColor = Color.Teal;
-            returnlinkLabel1.AutoSize = true;
-            returnlinkLabel1.BackColor = Color.Teal;
-            returnlinkLabel1.Font = new Font("Arial Black", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            returnlinkLabel1.LinkColor = Color.White;
-            returnlinkLabel1.Location = new Point(29, 9);
-            returnlinkLabel1.Name = "returnlinkLabel1";
-            returnlinkLabel1.Size = new Size(67, 22);
-            returnlinkLabel1.TabIndex = 11;
-            returnlinkLabel1.TabStop = true;
-            returnlinkLabel1.Text = "Return";
-            returnlinkLabel1.LinkClicked += returnlinkLabel1_LinkClicked;
             // 
             // pictureBox1
             // 
             pictureBox1.Dock = DockStyle.Fill;
-            pictureBox1.Image = Properties.Resources.image;
+            pictureBox1.Image = Properties.Resources.library;
             pictureBox1.Location = new Point(0, 0);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(1284, 661);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 12;
             pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click;
+            // 
+            // button1
+            // 
+            button1.BackColor = Color.Teal;
+            button1.FlatAppearance.BorderColor = Color.White;
+            button1.FlatStyle = FlatStyle.Flat;
+            button1.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            button1.ForeColor = Color.White;
+            button1.Location = new Point(44, 9);
+            button1.Name = "button1";
+            button1.Size = new Size(84, 38);
+            button1.TabIndex = 13;
+            button1.Text = "Back";
+            button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
             // Library
             // 
             ClientSize = new Size(1284, 661);
-            Controls.Add(returnlinkLabel1);
+            Controls.Add(button1);
             Controls.Add(lblResult);
             Controls.Add(btnCheckOrder);
             Controls.Add(lstMythology);
@@ -245,8 +245,8 @@
         private System.Windows.Forms.ListBox lstMythology;
         private System.Windows.Forms.Button btnCheckOrder;
         private System.Windows.Forms.Label lblResult;
-        private LinkLabel returnlinkLabel1;
         private PictureBox pictureBox1;
+        private Button button1;
     }
 
 

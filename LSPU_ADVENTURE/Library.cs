@@ -236,7 +236,14 @@ namespace LSPU_ADVENTURE
 
 
 
-        private void returnlinkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+      
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
         {
             this.Hide();
             Map game = new Map();

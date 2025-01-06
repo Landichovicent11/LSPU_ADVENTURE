@@ -32,7 +32,10 @@ namespace LSPU_ADVENTURE
 
         private void leaderboardbutton3_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            Leaderboard abt = new Leaderboard();
+            abt.ShowDialog();
+            this.Close();
         }
 
         private void Settings_Load(object sender, EventArgs e)

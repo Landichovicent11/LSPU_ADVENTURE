@@ -165,7 +165,7 @@
             label4.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label4.Location = new Point(152, 32);
             label4.Name = "label4";
-            label4.Size = new Size(528, 153);
+            label4.Size = new Size(528, 119);
             label4.TabIndex = 2;
             label4.Text = resources.GetString("label4.Text");
             label4.Click += label4_Click;

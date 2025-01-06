@@ -34,10 +34,10 @@
             btnSubmit = new Button();
             btnStartGame = new Button();
             lstGuessedFoods = new ListBox();
-            SettingspictureBox1 = new PictureBox();
-            exitlinkLabel1 = new LinkLabel();
+            button1 = new Button();
+            button2 = new Button();
+            btnShowLeaderboard = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)SettingspictureBox1).BeginInit();
             SuspendLayout();
             // 
             // pictureBox
@@ -127,39 +127,61 @@
             lstGuessedFoods.TabIndex = 5;
             lstGuessedFoods.SelectedIndexChanged += lstGuessedFoods_SelectedIndexChanged;
             // 
-            // SettingspictureBox1
+            // button1
             // 
-            SettingspictureBox1.Image = Properties.Resources.photo2pixel_download__1_1;
-            SettingspictureBox1.Location = new Point(1187, 12);
-            SettingspictureBox1.Name = "SettingspictureBox1";
-            SettingspictureBox1.Size = new Size(85, 77);
-            SettingspictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-            SettingspictureBox1.TabIndex = 7;
-            SettingspictureBox1.TabStop = false;
-            SettingspictureBox1.Click += SettingspictureBox1_Click;
+            button1.BackColor = Color.Teal;
+            button1.FlatAppearance.BorderColor = Color.White;
+            button1.FlatStyle = FlatStyle.Flat;
+            button1.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            button1.ForeColor = Color.White;
+            button1.Location = new Point(44, 13);
+            button1.Name = "button1";
+            button1.Size = new Size(75, 31);
+            button1.TabIndex = 7;
+            button1.Text = "Back";
+            button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
-            // exitlinkLabel1
+            // button2
             // 
-            exitlinkLabel1.ActiveLinkColor = Color.Teal;
-            exitlinkLabel1.AutoSize = true;
-            exitlinkLabel1.Font = new Font("Arial", 15.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            exitlinkLabel1.LinkColor = Color.Black;
-            exitlinkLabel1.Location = new Point(1080, 43);
-            exitlinkLabel1.Name = "exitlinkLabel1";
-            exitlinkLabel1.Size = new Size(78, 24);
-            exitlinkLabel1.TabIndex = 8;
-            exitlinkLabel1.TabStop = true;
-            exitlinkLabel1.Text = "Return";
-            exitlinkLabel1.LinkClicked += exitlinkLabel1_LinkClicked;
+            button2.BackColor = Color.Teal;
+            button2.FlatAppearance.BorderColor = Color.White;
+            button2.FlatStyle = FlatStyle.Flat;
+            button2.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            button2.ForeColor = Color.White;
+            button2.Location = new Point(1161, 12);
+            button2.Name = "button2";
+            button2.Size = new Size(75, 31);
+            button2.TabIndex = 8;
+            button2.Text = "Pause";
+            button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
+            // 
+            // btnShowLeaderboard
+            // 
+            btnShowLeaderboard.BackColor = Color.Teal;
+            btnShowLeaderboard.FlatAppearance.BorderColor = Color.White;
+            btnShowLeaderboard.FlatStyle = FlatStyle.Flat;
+            btnShowLeaderboard.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            btnShowLeaderboard.ForeColor = Color.White;
+            btnShowLeaderboard.Location = new Point(1149, 619);
+            btnShowLeaderboard.Name = "btnShowLeaderboard";
+            btnShowLeaderboard.Size = new Size(123, 30);
+            btnShowLeaderboard.TabIndex = 9;
+            btnShowLeaderboard.Text = "Leaderboard";
+            btnShowLeaderboard.UseVisualStyleBackColor = false;
+            btnShowLeaderboard.Click += btnShowLeaderboard_Click_1;
             // 
             // TypingGameRecess
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImage = Properties.Resources.cafeteria;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1284, 661);
-            Controls.Add(exitlinkLabel1);
-            Controls.Add(SettingspictureBox1);
+            Controls.Add(btnShowLeaderboard);
+            Controls.Add(button2);
+            Controls.Add(button1);
             Controls.Add(lstGuessedFoods);
             Controls.Add(lblScore);
             Controls.Add(btnStartGame);
@@ -167,18 +189,19 @@
             Controls.Add(txtGuess);
             Controls.Add(lblTimeLeft);
             Controls.Add(pictureBox);
+            DoubleBuffered = true;
             FormBorderStyle = FormBorderStyle.None;
             Name = "TypingGameRecess";
             Text = "Guess the Food Game";
             Load += FoodGuessGameForm_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox).EndInit();
-            ((System.ComponentModel.ISupportInitialize)SettingspictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
-        private PictureBox SettingspictureBox1;
-        private LinkLabel exitlinkLabel1;
         private System.Windows.Forms.Timer gameTimer;
+        private Button button1;
+        private Button button2;
+        private Button btnShowLeaderboard;
     }
 }

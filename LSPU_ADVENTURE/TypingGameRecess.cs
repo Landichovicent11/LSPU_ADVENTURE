@@ -19,11 +19,13 @@ namespace LSPU_ADVENTURE
         private System.Windows.Forms.Timer gameDurationTimer;
         private Random random = new Random();
         private bool isPaused = false;
+        private List<int> leaderboardScores;
 
         public TypingGameRecess()
         {
             InitializeComponent();
             InitializeGame();
+            leaderboardScores = new List<int>();
         }
 
         private void InitializeGame()
@@ -32,11 +34,13 @@ namespace LSPU_ADVENTURE
             gameTimer.Interval = 1000;
             gameTimer.Tick += GameTimer_Tick;
 
+            isPaused = false;
+
             gameDurationTimer = new System.Windows.Forms.Timer();
             gameDurationTimer.Interval = 1000;
             gameDurationTimer.Tick += GameDurationTimer_Tick;
 
-           
+
 
             lblTimeLeft.Text = $"Time Left: {timeLeft} seconds";
             lblScore.Text = $"Score: {score}";
@@ -44,11 +48,14 @@ namespace LSPU_ADVENTURE
             pictureBox.Visible = false;
             txtGuess.Enabled = false;
             btnSubmit.Visible = false;
-            exitlinkLabel1.Visible = false;
+
         }
 
         private void LoadRandomImage()
         {
+            guessedFoods.Clear();
+            lstGuessedFoods.Items.Clear();
+
             // Map resources to their respective food lists
             var imageResourceMap = new Dictionary<Bitmap, List<string>>
     {
@@ -101,6 +108,8 @@ namespace LSPU_ADVENTURE
         {
             gameTimer.Stop();
             txtGuess.Clear();
+
+            leaderboardScores.Add(score);
             MessageBox.Show(message, "Game Over", MessageBoxButtons.OK, MessageBoxIcon.Information);
             ResetGameControls();
         }
@@ -177,12 +186,13 @@ namespace LSPU_ADVENTURE
                     if (guessedFoods.Count == foodList.Count)
                     {
                         gameTimer.Stop();
-                        
+
                         MessageBox.Show("All foods guessed! Loading the next image.", "Round Complete", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         LoadRandomImage(); // Load a new image
 
                         gameTimer.Start();
                         
+
                     }
                 }
                 else
@@ -223,8 +233,8 @@ namespace LSPU_ADVENTURE
                 gameDurationTimer.Start();
                 lblTimeLeft.Text = $"Time Left: {timeLeft} seconds";
                 lblScore.Text = $"Score: {score}";
-                exitlinkLabel1.Visible = false;
-               
+
+
             }
             else
             {
@@ -232,7 +242,7 @@ namespace LSPU_ADVENTURE
                 isPaused = true;
                 gameTimer.Stop();
                 gameDurationTimer.Stop();
-                exitlinkLabel1.Visible = true;
+
 
             }
         }
@@ -250,12 +260,53 @@ namespace LSPU_ADVENTURE
             }
         }
 
-        private void exitlinkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+       
+
+
+
+
+        private void button1_Click(object sender, EventArgs e)
         {
+            string filePath = "leaderboard.txt";
+
+            // Append the current score to the file
+            using (StreamWriter writer = new StreamWriter(filePath, true))
+            {
+                writer.WriteLine(score); // Save the current score
+            }
+
             this.Hide();
             Map game = new Map();
             game.ShowDialog();
             this.Close();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (isPaused)
+            {
+                // Resume the game
+                isPaused = false;
+                gameTimer.Start();
+                gameDurationTimer.Start();
+                button2.Text = "Pause"; // Update button text to "Pause"
+            }
+            else
+            {
+                // Pause the game
+                isPaused = true;
+                gameTimer.Stop();
+                gameDurationTimer.Stop();
+                button2.Text = "Resume"; // Update button text to "Resume"
+            }
+        }
+
+        private void btnShowLeaderboard_Click_1(object sender, EventArgs e)
+        {
+            // Show the leaderboard form
+            var leaderboardForm = new Leaderboard();
+            leaderboardForm.UpdateLeaderboard(leaderboardScores);
+            leaderboardForm.ShowDialog();
         }
     }
 }

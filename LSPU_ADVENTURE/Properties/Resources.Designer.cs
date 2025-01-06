@@ -143,6 +143,16 @@ namespace LSPU_ADVENTURE.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap cafeteria {
+            get {
+                object obj = ResourceManager.GetObject("cafeteria", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap chicken {
             get {
                 object obj = ResourceManager.GetObject("chicken", resourceCulture);
@@ -196,6 +206,16 @@ namespace LSPU_ADVENTURE.Properties {
         internal static System.Drawing.Bitmap Kwek_Kwek_Recipe {
             get {
                 object obj = ResourceManager.GetObject("Kwek-Kwek-Recipe", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap library {
+            get {
+                object obj = ResourceManager.GetObject("library", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

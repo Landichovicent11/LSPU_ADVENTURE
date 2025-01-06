@@ -142,6 +142,9 @@
   <data name="Light-Blue-Wallpaper-Designs" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Image\Light-Blue-Wallpaper-Designs.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="cafeteria" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cafeteria.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="123603d7-68fe-4ac7-a30f-efa58cbd6bcf" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\123603d7-68fe-4ac7-a30f-efa58cbd6bcf.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -187,6 +190,9 @@
   <data name="chicken" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Image\chicken.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="2025-01-05 (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\2025-01-05 (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="vincent" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\vincent.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -199,7 +205,7 @@
   <data name="photo2pixel_download (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Image\photo2pixel_download (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="2025-01-05 (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\2025-01-05 (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="library" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\library.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
