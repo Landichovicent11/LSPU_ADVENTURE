@@ -20,11 +20,13 @@ namespace LSPU_ADVENTURE
         private List<string> mythologyAnswers;
 
         private Random random;
+        private List<int> libraryleaderboardScores;
 
         public Library()
         {
             InitializeComponent();
             InitializeGame();
+            libraryleaderboardScores = new List<int>();
         }
 
         private void InitializeGame()
@@ -236,7 +238,7 @@ namespace LSPU_ADVENTURE
 
 
 
-      
+
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
@@ -245,10 +247,31 @@ namespace LSPU_ADVENTURE
 
         private void button1_Click(object sender, EventArgs e)
         {
+            string filePath = "Libraryleaderboard.txt";
+
+            // Calculate the current score from the `btnCheckOrder_Click` method
+            int score = 0;
+            score += CheckCategory(actionStack, actionAnswers, "Action");
+            score += CheckCategory(comedyStack, comedyAnswers, "Comedy");
+            score += CheckCategory(educationalStack, educationalAnswers, "Educational");
+            score += CheckCategory(mythologyStack, mythologyAnswers, "Mythology");
+
+            // Append the score to the text file
+            using (StreamWriter writer = new StreamWriter(filePath, true))
+            {
+                writer.WriteLine(score); // Save the current score
+            }
             this.Hide();
             Map game = new Map();
             game.ShowDialog();
             this.Close();
+        }
+
+        private void libButtonleaderboard_Click(object sender, EventArgs e)
+        {
+            var leaderboardForm = new Leaderboard();
+            leaderboardForm.UpdateLibraryLeaderboard(libraryleaderboardScores);
+            leaderboardForm.ShowDialog();
         }
     }
 }

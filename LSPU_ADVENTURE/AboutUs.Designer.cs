@@ -170,7 +170,7 @@
             label3.Name = "label3";
             label3.Size = new Size(332, 68);
             label3.TabIndex = 1;
-            label3.Text = "YUAN GABRIEL LUGADA\r\n---------------------------------------------------------------------------------\r\n- KAPOGIAN\r\n- IM Game function\r\n";
+            label3.Text = "YUAN GABRIEL LUGADA\r\n---------------------------------------------------------------------------------\r\n- Leaderboards\r\n- IM Game function\r\n";
             // 
             // pictureBox6
             // 

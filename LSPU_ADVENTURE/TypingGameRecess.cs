@@ -187,23 +187,27 @@ namespace LSPU_ADVENTURE
                     {
                         gameTimer.Stop();
 
-                        MessageBox.Show("All foods guessed! Loading the next image.", "Round Complete", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        promptlabel2.Text = "All foods guessed! Loading the next image."; // Update label for round completion
+                        promptlabel2.ForeColor = Color.Green;
                         LoadRandomImage(); // Load a new image
 
                         gameTimer.Start();
-                        
+
 
                     }
                 }
                 else
                 {
-                    MessageBox.Show("You already guessed this food!", "Duplicate Guess", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
+                    promptlabel2.Text = "You already guessed this food!"; // Display message for duplicate guess
+                    promptlabel2.ForeColor = Color.Orange;
                     txtGuess.Clear();
                 }
             }
             else
             {
-                MessageBox.Show($"'{txtGuess.Text}' is incorrect. Try again!", "Incorrect Guess", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                promptlabel2.Text = $"'{txtGuess.Text}' is incorrect. Try again!"; // Display message for incorrect guess
+                promptlabel2.ForeColor = Color.Red;
                 txtGuess.Clear();
             }
         }
@@ -260,7 +264,7 @@ namespace LSPU_ADVENTURE
             }
         }
 
-       
+
 
 
 
@@ -307,6 +311,11 @@ namespace LSPU_ADVENTURE
             var leaderboardForm = new Leaderboard();
             leaderboardForm.UpdateLeaderboard(leaderboardScores);
             leaderboardForm.ShowDialog();
+        }
+
+        private void promptlabel2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

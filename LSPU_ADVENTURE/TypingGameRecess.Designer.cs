@@ -37,6 +37,7 @@
             button1 = new Button();
             button2 = new Button();
             btnShowLeaderboard = new Button();
+            promptlabel2 = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox).BeginInit();
             SuspendLayout();
             // 
@@ -121,7 +122,7 @@
             lstGuessedFoods.Font = new Font("Arial Black", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lstGuessedFoods.FormattingEnabled = true;
             lstGuessedFoods.ItemHeight = 22;
-            lstGuessedFoods.Location = new Point(482, 466);
+            lstGuessedFoods.Location = new Point(497, 480);
             lstGuessedFoods.Name = "lstGuessedFoods";
             lstGuessedFoods.Size = new Size(322, 114);
             lstGuessedFoods.TabIndex = 5;
@@ -172,6 +173,17 @@
             btnShowLeaderboard.UseVisualStyleBackColor = false;
             btnShowLeaderboard.Click += btnShowLeaderboard_Click_1;
             // 
+            // promptlabel2
+            // 
+            promptlabel2.AutoSize = true;
+            promptlabel2.BackColor = Color.Transparent;
+            promptlabel2.Font = new Font("Arial", 11.25F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            promptlabel2.Location = new Point(538, 451);
+            promptlabel2.Name = "promptlabel2";
+            promptlabel2.Size = new Size(0, 17);
+            promptlabel2.TabIndex = 11;
+            promptlabel2.Click += promptlabel2_Click;
+            // 
             // TypingGameRecess
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -179,6 +191,7 @@
             BackgroundImage = Properties.Resources.cafeteria;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1284, 661);
+            Controls.Add(promptlabel2);
             Controls.Add(btnShowLeaderboard);
             Controls.Add(button2);
             Controls.Add(button1);
@@ -203,5 +216,6 @@
         private Button button1;
         private Button button2;
         private Button btnShowLeaderboard;
+        private Label promptlabel2;
     }
 }

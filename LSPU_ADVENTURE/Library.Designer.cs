@@ -36,6 +36,7 @@
             lblResult = new Label();
             pictureBox1 = new PictureBox();
             button1 = new Button();
+            libButtonleaderboard = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -206,9 +207,25 @@
             button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
             // 
+            // libButtonleaderboard
+            // 
+            libButtonleaderboard.BackColor = Color.Teal;
+            libButtonleaderboard.FlatAppearance.BorderColor = Color.White;
+            libButtonleaderboard.FlatStyle = FlatStyle.Flat;
+            libButtonleaderboard.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            libButtonleaderboard.ForeColor = Color.White;
+            libButtonleaderboard.Location = new Point(1159, 611);
+            libButtonleaderboard.Name = "libButtonleaderboard";
+            libButtonleaderboard.Size = new Size(113, 38);
+            libButtonleaderboard.TabIndex = 14;
+            libButtonleaderboard.Text = "Leaderboard";
+            libButtonleaderboard.UseVisualStyleBackColor = false;
+            libButtonleaderboard.Click += libButtonleaderboard_Click;
+            // 
             // Library
             // 
             ClientSize = new Size(1284, 661);
+            Controls.Add(libButtonleaderboard);
             Controls.Add(button1);
             Controls.Add(lblResult);
             Controls.Add(btnCheckOrder);
@@ -247,6 +264,7 @@
         private System.Windows.Forms.Label lblResult;
         private PictureBox pictureBox1;
         private Button button1;
+        private Button libButtonleaderboard;
     }
 
 
